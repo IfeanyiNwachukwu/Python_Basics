@@ -1,0 +1,42 @@
+openapi: 3.0.1
+info:
+  title: CollateralReleaseProcess
+  version: "1.0"
+servers:
+  - url: /CollateralReleaseAPI
+paths:
+  /api/Transaction/SearchAccount:
+    get:
+      tags:
+        - Transaction
+      summary: SearchAccount
+      description: Search accounts by acctName query parameter. Details about response schema are not provided in the source.
+      parameters:
+        - name: acctName
+          in: query
+          description: Account name to search for
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+  /api/Transaction/AccountByCifId:
+    get:
+      tags:
+        - Transaction
+      summary: AccountByCifId
+      description: Retrieve account(s) by cifId query parameter. Details about response schema are not provided in the source.
+      parameters:
+        - name: cifId
+          in: query
+          description: CIF identifier
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+components:
+  schemas: {}
+  securitySchemes: {}

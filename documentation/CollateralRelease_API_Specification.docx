@@ -1,0 +1,30 @@
+CollateralReleaseProcess — API Specification
+
+This document was generated from the provided OpenAPI JSON (CollateralReleaseAPI 2 (1).json).
+
+SUMMARY
+-------
+This document contains the API specification content produced earlier. It includes the API overview, endpoint details, and documentation gaps. For the full, canonical markdown files, refer to the documentation directory in the repository.
+
+1. API OVERVIEW
+- API name: CollateralReleaseProcess
+- Base URL: /CollateralReleaseAPI
+- Version: 1.0
+- Endpoints: GET /api/Transaction/SearchAccount, GET /api/Transaction/AccountByCifId
+
+2. ENDPOINTS
+- GET /api/Transaction/SearchAccount
+  - Query parameter: acctName (string)
+  - Response: 200 Success (no schema specified)
+
+- GET /api/Transaction/AccountByCifId
+  - Query parameter: cifId (string)
+  - Response: 200 Success (no schema specified)
+
+3. GAPS
+- No authentication/security schemes documented
+- No response schemas
+- No error response formats
+- No Postman collection provided
+
+For full details please open the markdown files in the documentation/ directory.
